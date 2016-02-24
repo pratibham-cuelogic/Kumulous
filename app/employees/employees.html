@@ -1,0 +1,49 @@
+<div class="page-container">
+	<div role="main" class="col -sm-8 col m-offset-2" ng-controller="empCtrl" ng-init="getEmployees();">
+		<div>
+			<div class="bs-component container container-table">
+				<div>
+					<!--<div class="col-md-6 text-right">
+						Sort By:
+						<select name="option" id="option" ng-model="option" ng-change="order();">
+							<option value="name" selected="selected">Name</option>
+							<option value="email">Email</option>
+							<option value="age">Age</option>
+							<option value="gender">Gender</option>
+						</select>
+					</div>-->
+				</div>
+				<table class="table table-striped table-hover table-responsive">
+					<caption class="text-center">Employee List</caption>
+					<tr>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Department</th>
+						<th>Salary</th>
+						<th>Experience</th>
+						<th></th>
+					</tr>
+					<tr ng-repeat="employee in employees.Employees">
+						<td>{{employee.ID}}</td>
+						<td>{{employee.firstName}} {{employee.lastName}}</td>
+						<td>{{employee.department}}</td>
+						<td>{{employee.salary}}</td>
+						<td>{{employee.experience}} <span ng-if= employee.experience !== undefined> years</span></td>
+						<td>
+							<employee-delete email="{{employee.ID}}"><button>Delete</button></employee-delete>
+						</td>
+					</tr>
+				</table>
+				<div class="pagination-centered pagination">
+					<ul>
+						<li><a href="#">←</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li class="disabled"><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">→</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

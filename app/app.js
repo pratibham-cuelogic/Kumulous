@@ -3,10 +3,18 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
   'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
+  'employee',
+  'LocalStorageModule',
   'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.otherwise({redirectTo: '/employees'});
+}])
+
+.config(['localStorageServiceProvider', '$httpProvider', function( localStorageServiceProvider, $httpProvider) {
+	localStorageServiceProvider
+	.setPrefix('authToken')
+	.setStorageType('localStorage')
+	.setNotify(true, true);
+	$httpProvider.interceptors.push('interceptorService');
 }]);
