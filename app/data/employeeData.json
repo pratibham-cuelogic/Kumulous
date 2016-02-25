@@ -2,412 +2,404 @@
 	"Employees" : 
 	[
 		{
-			"ID":"1",
+			"ID":1,
 			"firstName":"Pratibha",
 			"lastName":"Mishra",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"3"
+			"salary":100000,
+			"experience":3
 		},
 		{
-			"ID":"2",
+			"ID":2,
 			"firstName":"Richa",
 			"lastName":"Dagar",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"3"
+			"salary":100000,
+			"experience":3
 		},
 		{
-			"ID":"3",
+			"ID":3,
 			"firstName":"Ashwini",
 			"lastName":"Gawade",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"3"
+			"salary":100000,
+			"experience":3
 		},
 		{
-			"ID":"4",
+			"ID":4,
 			"firstName":"Shital",
 			"lastName":"Agrawal",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"3"
+			"salary":100000,
+			"experience":3
 		},
 		{
-			"ID":"5",
+			"ID":5,
 			"firstName":"Ketaki",
 			"lastName":"Yeolekar",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"3"
+			"salary":100000,
+			"experience":3
 		},
 		{
-			"ID":"6",
+			"ID":6,
 			"firstName":"Rucha",
 			"lastName":"Urdhwareshe",
 			"department":"Sales",
-			"salary":"100000",
-			"experience":"3"
+			"salary":100000,
+			"experience":3
 		},
 		{
-			"ID":"7",
+			"ID":7,
 			"firstName":"Akanksha",
 			"lastName":"Wable",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"4"
+			"salary":100000,
+			"experience":4
 		},
 		{
-			"ID":"8",
+			"ID":8,
 			"firstName":"Sandra",
 			"lastName":"John",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"4"
+			"salary":100000,
+			"experience":4
 		},
 		{
-			"ID":"9",
+			"ID":9,
 			"firstName":"Madhura",
-			"lastName":"Phalande",
+			"lastName":"Palande",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"5"
+			"salary":100000,
+			"experience":5
 		},
 		{
-			"ID":"10",
+			"ID":10,
 			"firstName":"Depti",
 			"lastName":"Kakade",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"5"
+			"salary":100000,
+			"experience":5
 		},
 		{
-			"ID":"11",
+			"ID":11,
 			"firstName":"Ketaki",
 			"lastName":"Abhyankar",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"5"
+			"salary":100000,
+			"experience":5
 		},
 		{
-			"ID":"12",
+			"ID":12,
 			"firstName":"Nisharani",
 			"lastName":"Jadhav",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"5"
+			"salary":100000,
+			"experience":5
 		},
 		{
-			"ID":"13",
+			"ID":13,
 			"firstName":"Shruti",
 			"lastName":"Hiremati",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"2"
+			"salary":100000,
+			"experience":2
 		},
 		{
-			"ID":"14",
+			"ID":14,
 			"firstName":"Deepali",
 			"lastName":"Bavi",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"2"
+			"salary":100000,
+			"experience":2
 		},
 		{
-			"ID":"15",
+			"ID":15,
 			"firstName":"Pradnya",
 			"lastName":"Medhe",
 			"department":"Sales",
-			"salary":"100000",
-			"experience":"5"
+			"salary":100000,
+			"experience":5
 		},
 		{
-			"ID":"16",
+			"ID":16,
 			"firstName":"Kiran",
 			"lastName":"Bangale",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"2"
+			"salary":100000,
+			"experience":2
 		},
 		{
-			"ID":"17",
+			"ID":17,
 			"firstName":"Anija",
 			"lastName":"Thomas",
 			"department":"Delivery",
-			"salary":"10000",
-			"experience":"4"
+			"salary":10000,
+			"experience":4
 		},
 		{
-			"ID":"18",
+			"ID":18,
 			"firstName":"Uma",
 			"lastName":"Ramani",
 			"department":"HR",
-			"salary":"100000",
-			"experience":"2"
+			"salary":100000,
+			"experience":2
 		},
 		{
-			"ID":"19",
+			"ID":19,
 			"firstName":"Samprada",
 			"lastName":"Kodkany",
 			"department":"HR",
-			"salary":"100000",
-			"experience":"6"
+			"salary":100000,
+			"experience":6
 		},
 		{
-			"ID":"20",
+			"ID":20,
 			"firstName":"Deepali",
 			"lastName":"Verenkar",
 			"department":"HR",
-			"salary":"100000",
-			"experience":"2"
+			"salary":100000,
+			"experience":2
 		},
 		{
-			"ID":"21",
+			"ID":21,
 			"firstName":"Akshata",
 			"lastName":"Hirkal",
 			"department":"HR",
-			"salary":"10000",
-			"experience":"3"
+			"salary":10000,
+			"experience":3
 		},
 		{
-			"ID":"22",
+			"ID":22,
 			"firstName":"Sandeep",
 			"lastName":"Paithankar",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"8"
+			"salary":100000,
+			"experience":8
 		},
 		{
-			"ID":"23",
+			"ID":23,
 			"firstName":"Pranoop",
 			"lastName":"Reddy",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"6"
+			"salary":100000,
+			"experience":6
 		},
 		{
-			"ID":"24",
+			"ID":24,
 			"firstName":"Vivek",
 			"lastName":"Phadke",
 			"department":"Management",
-			"salary":"100000",
-			"experience":"9"
+			"salary":100000,
+			"experience":9
 		},
 		{
-			"ID":"25",
+			"ID":25,
 			"firstName":"Pranaya",
 			"lastName":"Dubey",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"4"
+			"salary":100000,
+			"experience":4
 		},
 		{
-			"ID":"26",
+			"ID":26,
 			"firstName":"Vanshaj",
 			"lastName":"Rai",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"3"
+			"salary":100000,
+			"experience":3
 		},
 		{
-			"ID":"27",
+			"ID":27,
 			"firstName":"Chanakya",
 			"lastName":"Devraj",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"3"
+			"salary":100000,
+			"experience":3
 		},
 		{
-			"ID":"28",
+			"ID":28,
 			"firstName":"Jitendra",
 			"lastName":"Samant",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"4"
+			"salary":100000,
+			"experience":4
 		},
 		{
-			"ID":"29",
+			"ID":29,
 			"firstName":"Pranav",
 			"lastName":"Naxane",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"3"
+			"salary":100000,
+			"experience":3
 		},
 		{
-			"ID":"30",
+			"ID":30,
 			"firstName":"Aju",
 			"lastName":"John",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"4"
+			"salary":100000,
+			"experience":4
 		},
 		{
-			"ID":"31",
+			"ID":31,
 			"firstName":"Mukul",
 			"lastName":"Metadawal",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"3"
+			"salary":100000,
+			"experience":3
 		},
 		{
-			"ID":"32",
+			"ID":32,
 			"firstName":"Onkar",
 			"lastName":"Tibe",
 			"department":"Management",
-			"salary":"100000",
-			"experience":"8"
+			"salary":100000,
+			"experience":8
 		},
 		{
-			"ID":"33",
+			"ID":33,
 			"firstName":"Vikrant",
 			"lastName":"Labade",
 			"department":"Management",
-			"salary":"100000",
-			"experience":"9"
+			"salary":100000,
+			"experience":9
 		},
 		{
-			"ID":"34",
+			"ID":34,
 			"firstName":"Neel",
 			"lastName":"Vartikar",
 			"department":"Management",
-			"salary":"10000",
-			"experience":"8"
+			"salary":10000,
+			"experience":8
 		},
 		{
-			"ID":"35",
+			"ID":35,
 			"firstName":"Nikhil",
 			"lastName":"Ambekar",
 			"department":"Management",
-			"salary":"100000",
-			"experience":"9"
+			"salary":100000,
+			"experience":9
 		},
 		{
-			"ID":"36",
+			"ID":36,
 			"firstName":"Ninad",
 			"lastName":"Shah",
 			"department":"Managemnet",
-			"salary":"100000",
-			"experience":"9"
+			"salary":100000,
+			"experience":9
 		},
 		{
-			"ID":"37",
+			"ID":37,
 			"firstName":"Prasanna",
 			"lastName":"Champanerkar",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"3"
+			"salary":100000,
+			"experience":3
 		},
 		{
-			"ID":"38",
+			"ID":38,
 			"firstName":"Abdulqader",
 			"lastName":"Kapadia",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"6"
+			"salary":100000,
+			"experience":6
 		},
 		{
-			"ID":"39",
+			"ID":39,
 			"firstName":"Suryateja",
 			"lastName":"Mahindra",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"4"
+			"salary":100000,
+			"experience":4
 		},
 		{
-			"ID":"40",
+			"ID":40,
 			"firstName":"Amol",
 			"lastName":"Nikam",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"6"
+			"salary":100000,
+			"experience":6
 		},
 		{
-			"ID":"41",
+			"ID":41,
 			"firstName":"Santosh",
 			"lastName":"Ghadge",
 			"department":"Admin",
-			"salary":"100000",
-			"experience":"5"
+			"salary":100000,
+			"experience":5
 		},
 		{
-			"ID":"42",
+			"ID":42,
 			"firstName":"Sandeep",
 			"lastName":"Shinde",
 			"department":"Admin",
-			"salary":"100000",
-			"experience":"4"
+			"salary":100000,
+			"experience":4
 		},
 		{
-			"ID":"43",
+			"ID":43,
 			"firstName":"Ajinkya",
 			"lastName":"Bhagata",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"4"
+			"salary":100000,
+			"experience":4
 		},
 		{
-			"ID":"44",
+			"ID":44,
 			"firstName":"David",
 			"lastName":"Vaz",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"4"
+			"salary":100000,
+			"experience":4
 		},
 		{
-			"ID":"45",
+			"ID":45,
 			"firstName":"Akash",
 			"lastName":"Shah",
 			"department":"Delivery",
-			"salary":"10000",
-			"experience":"4"
+			"salary":10000,
+			"experience":4
 		},
 		{
-			"ID":"46",
+			"ID":46,
 			"firstName":"Prasanna",
 			"lastName":"Muley",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"4"
+			"salary":100000,
+			"experience":4
 		},
 		{
-			"ID":"47",
+			"ID":47,
 			"firstName":"Gaurav",
 			"lastName":"Mothekadam",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"4"
+			"salary":100000,
+			"experience":4
 		},
 		{
-			"ID":"48",
+			"ID":48,
 			"firstName":"Prasana",
 			"lastName":"Alwekar",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"4"
+			"salary":100000,
+			"experience":4
 		},
 		{
-			"ID":"49",
+			"ID":49,
 			"firstName":"Santosh",
 			"lastName":"Jagtap",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"4"
+			"salary":100000,
+			"experience":4
 		},
 		{
-			"ID":"50",
+			"ID":50,
 			"firstName":"Rahul",
 			"lastName":"Phalke",
 			"department":"Delivery",
-			"salary":"100000",
-			"experience":"4"
-		},
-		{
-			"ID":"",
-			"firstName":"",
-			"lastName":"",
-			"department":"",
-			"salary":"",
-			"experience":""
+			"salary":100000,
+			"experience":4
 		}
 	]
 }
