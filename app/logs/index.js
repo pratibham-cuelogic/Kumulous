@@ -1,0 +1,1 @@
+angular.module('log', ['log.controller', 'log.route', 'log.service']);

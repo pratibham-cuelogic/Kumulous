@@ -1,1 +1,1 @@
-angular.module('services',['employee.service', 'interceptor.service', 'localStorage.service']);
+angular.module('services',['employee.service', 'interceptor.service', 'localStorage.service', 'log.service']);

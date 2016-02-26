@@ -4,9 +4,9 @@
 angular.module('myApp', [
   'ngRoute',
   'employee',
+  'log',
   'LocalStorageModule',
-  'myApp.version',
-  'angularUtils.directives.dirPagination'
+  'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/employees'});

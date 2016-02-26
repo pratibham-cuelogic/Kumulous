@@ -1,41 +1,37 @@
-<div class="page-container" ng-controller="logCtrl">
-	<div role="main" class="col -sm-8 col m-offset-2" ng-controller="empCtrl">
+<div class="page-container">
+	<div role="main" class="col -sm-8 col m-offset-2" ng-controller="logCtrl">
 		<div>
 			<div class="bs-component container container-table">
-				<table class="table table-striped table-hover table-responsive" ng-init="pagedEmployees == '' ?  getEmployees() : '' ;">
-					<caption class="text-center">Employee List</caption>
+				<table class="table table-striped table-hover table-responsive" ng-init="pagedLogs == '' ?  getLogs() : '' ;">
+					<caption class="text-center">Log</caption>
 					<tr>
 						<th ng-click="sort('ID')">
-							ID
+							Sr.No
 							<span class="glyphicon sort-icon" ng-show="sortKey=='ID'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
 						</th>
 						<th ng-click="sort('firstName')">
-							Name
+							Date
 							<span class="glyphicon sort-icon" ng-show="sortKey=='firstName'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
 						</th>
 						<th ng-click="sort('department')">
-							Department
+							Time
 							<span class="glyphicon sort-icon" ng-show="sortKey=='department'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
 						</th>
 						<th ng-click="sort('salary')">
-							Salary
+							Action Performed
 							<span class="glyphicon sort-icon" ng-show="sortKey=='salary'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
 						</th>
-						<th ng-click="sort('experience')">
-							Experience
-							<span class="glyphicon sort-icon" ng-show="sortKey=='experience'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+						<th ng-click="sort('employee_name')">
+							Employee Name
+							<span class="glyphicon sort-icon" ng-show="sortKey=='employee_name'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
 						</th>
-						<th></th>
 					</tr>
-					<tr ng-repeat="employee in pagedEmployees[currentPage] | orderBy:sortKey:reverse">
+					<tr ng-repeat="employee in pagedLogs[currentPage] | orderBy:sortKey:reverse">
 						<td>{{employee.ID}}</td>
 						<td>{{employee.firstName}} {{employee.lastName}}</td>
 						<td>{{employee.department}}</td>
 						<td>{{employee.salary}}</td>
 						<td>{{employee.experience}} years</td>
-						<td>
-							<a href="#" ng-click="deleteEmployee($index)">Delete</a>
-						</td>
 					</tr>
 					<tfoot>
 						<tr>
@@ -44,10 +40,10 @@
 								<li ng-class="{disabled: currentPage == 0}">
 									<a href="javascript:;" ng-click="prevPage()"> << </a>
 								</li>
-								<li ng-repeat="n in range(pagedEmployees.length)" ng-class="{active: n == currentPage}" ng-click="setPage()">
+								<li ng-repeat="n in range(pagedLogs.length)" ng-class="{active: n == currentPage}" ng-click="setPage()">
 									<a href="javascript:;" ng-bind="n+1">1</a>
 								</li>
-								<li ng-class="{disabled: currentPage == pagedEmployees.length-1}">
+								<li ng-class="{disabled: currentPage == pagedLogs.length-1}">
 									<a href="javascript:;" ng-click="nextPage()"> >> </a>
 								</li>
 							</ul>
