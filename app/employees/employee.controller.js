@@ -1,7 +1,7 @@
 angular.module('employee.controller', ['services'])
-.controller('empCtrl', ['$scope', '$location', '$routeParams', '$rootScope', '$http', EmployeeController])
+.controller('empCtrl', ['$scope', '$http', EmployeeController])
 
-function EmployeeController($scope, $location, $routeParams, $rootScope, $http){
+function EmployeeController($scope, $http){
 	var sortKey = 'ID';
 
 	$scope.sortKey = sortKey;

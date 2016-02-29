@@ -1,22 +1,22 @@
 angular.module('log.service', [])
-.service('employeeService', ['$http', employeeService]);
+.service('logService', ['$http', logService]);
 
-function employeeService($http){
+function logService($http){
 	var service = {};
-	var employees = {};
+	var logs = {};
 	var errorMessage = "";
 
-	function getEmployees(){
-		$http.get('data/employeeData.json').
+	function getLogs(){
+		$http.get('data/MOCK_DATA.json').
 			success(function(data, status, headers, config){
-				employees = data.Employees;
+				logs = data;
 			}).
 			error(function(data, status, headers, config){
 				errorMessage = "Issue with json upload";
 			});
-		return employees;
+		return logs;
 	}
 
-	service.getEmployees = getEmployees();
+	service.getLogs = getLogs();
 	return service;
 }

@@ -5,33 +5,38 @@
 				<table class="table table-striped table-hover table-responsive" ng-init="pagedLogs == '' ?  getLogs() : '' ;">
 					<caption class="text-center">Log</caption>
 					<tr>
-						<th ng-click="sort('ID')">
+						<th ng-click="sort('no')">
 							Sr.No
-							<span class="glyphicon sort-icon" ng-show="sortKey=='ID'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+							<span class="glyphicon sort-icon" ng-show="sortKey=='no'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
 						</th>
-						<th ng-click="sort('firstName')">
+						<th ng-click="sort('date')">
 							Date
-							<span class="glyphicon sort-icon" ng-show="sortKey=='firstName'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+							<span class="glyphicon sort-icon" ng-show="sortKey=='date'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
 						</th>
-						<th ng-click="sort('department')">
+						<th ng-click="sort('time')">
 							Time
-							<span class="glyphicon sort-icon" ng-show="sortKey=='department'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+							<span class="glyphicon sort-icon" ng-show="sortKey=='time'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
 						</th>
-						<th ng-click="sort('salary')">
+						<th ng-click="sort('action_performed')">
 							Action Performed
-							<span class="glyphicon sort-icon" ng-show="sortKey=='salary'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+							<span class="glyphicon sort-icon" ng-show="sortKey=='action_performed'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
 						</th>
 						<th ng-click="sort('employee_name')">
 							Employee Name
 							<span class="glyphicon sort-icon" ng-show="sortKey=='employee_name'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
 						</th>
+						<th ng-click="sort('ip_address')">
+							IP Address
+							<span class="glyphicon sort-icon" ng-show="sortKey=='ip_address'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+						</th>
 					</tr>
-					<tr ng-repeat="employee in pagedLogs[currentPage] | orderBy:sortKey:reverse">
-						<td>{{employee.ID}}</td>
-						<td>{{employee.firstName}} {{employee.lastName}}</td>
-						<td>{{employee.department}}</td>
-						<td>{{employee.salary}}</td>
-						<td>{{employee.experience}} years</td>
+					<tr ng-repeat="log in pagedLogs[currentPage] | orderBy:sortKey:reverse">
+						<td>{{log.no}}</td>
+						<td>{{log.date}}</td>
+						<td>{{log.time}}</td>
+						<td>{{log.action_performed}}</td>
+						<td>{{log.employee_name}}</td>
+						<td>{{log.ip_address}}</td>
 					</tr>
 					<tfoot>
 						<tr>

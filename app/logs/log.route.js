@@ -3,7 +3,7 @@
 angular.module('log.route', ['ngRoute'])
 .config(['$routeProvider', function($routeProvider){
 	$routeProvider.when('/log', {
-		templateUrl : 'log/log.html',
+		templateUrl : 'logs/log.html',
 		controller : 'logCtrl'
 	});
 }]);

@@ -1,16 +1,16 @@
-angular.module('log.controller', ['services']).controller('logCtrl',['$scope', '$rootScope', LogController])
+angular.module('log.controller', ['services'])
+.controller('logCtrl',['$scope', '$http', LogController])
 
-function LogController($scope, $location, $rootScope) {
-	var sortKey = 'ID';
+function LogController($scope, $http) {
+	var sortKey = 'no';
 
 	$scope.sortKey = sortKey;
 	$scope.pageSizes = [10,20,30,40,50];
 	$scope.reverse = false;
 	$scope.logs = [];
 	$scope.groupedItems = [];
-	$scope.employeesPerPage = 10;
+	$scope.logsPerPage = 10;
 	$scope.pagedLogs = [];
-	console.log($scope.pagedLogs);
 
 	if($scope.currentPage == undefined || $scope.currentPage == ''){
 		$scope.currentPage = 0;
@@ -37,7 +37,6 @@ function LogController($scope, $location, $rootScope) {
 	}
 
 	function groupToPages(logs) {
-		console.log(logs);
 		for (var i = 0; i < logs.length; i++) {
 			if (i % $scope.logsPerPage === 0) {
 				$scope.pagedLogs[Math.floor(i / $scope.logsPerPage)] = [ logs[i] ];
