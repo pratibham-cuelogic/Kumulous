@@ -27,7 +27,7 @@
 						</th>
 						<th></th>
 					</tr>
-					<tr ng-repeat="employee in pagedEmployees[currentPage] | orderBy:sortKey:reverse">
+					<tr ng-repeat="employee in pagedEmployees[currentPage-1] | orderBy:sortKey:reverse">
 						<td>{{employee.ID}}</td>
 						<td>{{employee.firstName}} {{employee.lastName}}</td>
 						<td>{{employee.department}}</td>
@@ -37,7 +37,7 @@
 							<a href="#" ng-click="deleteEmployee($index)">Delete</a>
 						</td>
 					</tr>
-					<tfoot>
+					<!-- <tfoot>
 						<tr>
 							<td colspan = "9">
 							<ul class="pagination">
@@ -52,8 +52,17 @@
 								</li>
 							</ul>
 						</tr>
-					</tfoot>
+					</tfoot> -->
 				</table>
+				<paging
+					page="currentPage" 
+					page-size="pageSize" 
+					total="total"
+					scroll-top="true" 
+					hide-if-empty="true"
+					show-prev-next="true"
+					show-first-last="true">
+				</paging>
 			</div>
 		</div>
 	</div>

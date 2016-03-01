@@ -6,7 +6,8 @@ angular.module('myApp', [
   'employee',
   'log',
   'LocalStorageModule',
-  'myApp.version'
+  'myApp.version',
+  'directives'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/employees'});

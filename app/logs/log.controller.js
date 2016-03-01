@@ -1,16 +1,17 @@
 angular.module('log.controller', ['services'])
-.controller('logCtrl',['$scope', '$http', LogController])
+.controller('logCtrl',['$scope', '$http', '$log', LogController])
 
-function LogController($scope, $http) {
+function LogController($scope, $http, $log) {
 	var sortKey = 'no';
 
 	$scope.sortKey = sortKey;
-	$scope.pageSizes = [10,20,30,40,50];
+	$scope.pageSize = 10;
 	$scope.reverse = false;
 	$scope.logs = [];
 	$scope.groupedItems = [];
 	$scope.logsPerPage = 10;
 	$scope.pagedLogs = [];
+	$scope.total = 999;
 
 	if($scope.currentPage == undefined || $scope.currentPage == ''){
 		$scope.currentPage = 0;
@@ -44,33 +45,5 @@ function LogController($scope, $http) {
 				$scope.pagedLogs[Math.floor(i / $scope.logsPerPage)].push(logs[i]);
 			}
 		}
-	};
-
-	$scope.prevPage = function () {
-		if ($scope.currentPage > 0) {
-			$scope.currentPage--;
-		}
-	};
-
-	$scope.nextPage = function () {
-		if ($scope.currentPage < $scope.pagedLogs.length - 1) {
-			$scope.currentPage++;
-		}
-	};
-
-	$scope.setPage = function () {
-		$scope.currentPage = this.n;
-	};
-
-	$scope.range = function (start, end) {
-		var ret = [];
-		if (!end) {
-			end = start;
-			start = 0;
-		}
-		for (var i = start; i < end; i++) {
-			ret.push(i);
-		}
-		return ret;
 	};
 }
