@@ -50,7 +50,8 @@ angular.module('paging', []).directive('paging', function () {
 						'data-ng-bind="Item.value">'+ 
 					'</a> ' +
 			'</li>' +
-		'</ul>' 
+		'</ul>'
+		scope.$apply();
 	}
 
 	function setScopeValues(scope, attrs) {
@@ -60,7 +61,7 @@ angular.module('paging', []).directive('paging', function () {
 		
 		scope.page = parseInt(scope.page) || 1;
 		scope.total = parseInt(scope.total) || 0;
-		scope.adjacent = parseInt(scope.adjacent) || 2;
+		scope.adjacent = parseInt(scope.adjacent) || 1;
 
 		scope.pgHref = scope.pgHref || '';
 		scope.dots = scope.dots || '...';
@@ -88,7 +89,9 @@ angular.module('paging', []).directive('paging', function () {
 		scope.hideIfEmpty = evalBoolAttribute(scope, attrs.hideIfEmpty);
 		scope.showPrevNext = evalBoolAttribute(scope, attrs.showPrevNext);
 		scope.showFirstLast = evalBoolAttribute(scope, attrs.showFirstLast);
-		scope.scrollTop = evalBoolAttribute(scope, attrs.scrollTop)
+		scope.scrollTop = evalBoolAttribute(scope, attrs.scrollTop);
+
+		//scope.$apply();
 	}
 
 	function evalBoolAttribute(scope, value){
