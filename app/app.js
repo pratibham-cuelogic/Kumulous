@@ -11,12 +11,4 @@ angular.module('myApp', [
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/employees'});
-}])
-
-.config(['localStorageServiceProvider', '$httpProvider', function( localStorageServiceProvider, $httpProvider) {
-	localStorageServiceProvider
-	.setPrefix('authToken')
-	.setStorageType('localStorage')
-	.setNotify(true, true);
-	$httpProvider.interceptors.push('interceptorService');
 }]);
