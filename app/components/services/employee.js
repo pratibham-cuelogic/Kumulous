@@ -6,7 +6,7 @@ function employeeService($http){
 	var employees = {};
 	var errorMessage = "";
 
-	function getEmployees(){
+	function getData(){
 		$http.get('data/employeeData.json').
 			success(function(data, status, headers, config){
 				employees = data.Employees;
@@ -17,6 +17,6 @@ function employeeService($http){
 		return employees;
 	}
 
-	service.getEmployees = getEmployees();
+	service.getData = getData();
 	return service;
 }

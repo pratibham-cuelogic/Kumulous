@@ -37,22 +37,6 @@
 							<a href="#" ng-click="deleteEmployee($index)">Delete</a>
 						</td>
 					</tr>
-					<!-- <tfoot>
-						<tr>
-							<td colspan = "9">
-							<ul class="pagination">
-								<li ng-class="{disabled: currentPage == 0}">
-									<a href="javascript:;" ng-click="prevPage()"> << </a>
-								</li>
-								<li ng-repeat="n in range(pagedEmployees.length)" ng-class="{active: n == currentPage}" ng-click="setPage()">
-									<a href="javascript:;" ng-bind="n+1">1</a>
-								</li>
-								<li ng-class="{disabled: currentPage == pagedEmployees.length-1}">
-									<a href="javascript:;" ng-click="nextPage()"> >> </a>
-								</li>
-							</ul>
-						</tr>
-					</tfoot> -->
 				</table>
 				<paging
 					page="currentPage" 
